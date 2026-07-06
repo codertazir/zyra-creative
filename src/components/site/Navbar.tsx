@@ -12,7 +12,7 @@ function LanguageToggle() {
         layout
         transition={{ type: "spring", stiffness: 500, damping: 34 }}
         className="absolute inset-y-0.5 w-[calc(50%-0.125rem)] rounded-full bg-gradient-accent"
-        style={{ [lang === "en" ? "left" : "right"]: "0.125rem" } as React.CSSProperties}
+        style={{ [lang === "en" ? "insetInlineStart" : "insetInlineEnd"]: "0.125rem" } as React.CSSProperties}
       />
       <button
         onClick={() => setLang("en")}
