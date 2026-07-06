@@ -12,7 +12,7 @@ function LanguageToggle() {
         layout
         transition={{ type: "spring", stiffness: 500, damping: 34 }}
         className="absolute inset-y-0.5 w-[calc(50%-0.125rem)] rounded-full bg-gradient-accent"
-        style={{ [lang === "en" ? "left" : "right"]: "0.125rem" } as React.CSSProperties}
+        style={{ [lang === "en" ? "insetInlineStart" : "insetInlineEnd"]: "0.125rem" } as React.CSSProperties}
       />
       <button
         onClick={() => setLang("en")}
@@ -59,8 +59,9 @@ export function Navbar() {
         <a href="#top" className="flex items-center gap-2.5">
           <img src={mark} alt="Zyra Creative" width={34} height={34} className="h-8 w-8" />
           <span className="font-display text-lg font-bold tracking-tight">
-            {lang === "en" ? "Zyra" : "زيرا"}
-            <span className="text-gradient"> {lang === "en" ? "Creative" : "إبداع"}</span>
+            <span className="text-gradient">
+              {lang === "en" ? "Zyra Creative" : "زيرا إبداع"}
+            </span>
           </span>
         </a>
 
