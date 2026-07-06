@@ -59,8 +59,9 @@ export function Navbar() {
         <a href="#top" className="flex items-center gap-2.5">
           <img src={mark} alt="Zyra Creative" width={34} height={34} className="h-8 w-8" />
           <span className="font-display text-lg font-bold tracking-tight">
-            {lang === "en" ? "Zyra" : "زيرا"}
-            <span className="text-gradient"> {lang === "en" ? "Creative" : "إبداع"}</span>
+            <span className="text-gradient">
+              {lang === "en" ? "Zyra Creative" : "زيرا إبداع"}
+            </span>
           </span>
         </a>
 
