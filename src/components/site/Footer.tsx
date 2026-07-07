@@ -9,7 +9,7 @@ function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   const { t } = useI18n();
   return (
-    <div className="relative flex items-center rounded-full border border-border bg-secondary/60 p-0.5 text-xs font-medium">
+    <div className="relative inline-flex items-center rounded-full border border-border bg-secondary/60 p-0.5 text-xs font-medium">
       <motion.span
         layout
         transition={{ type: "spring", stiffness: 500, damping: 34 }}
