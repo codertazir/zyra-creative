@@ -79,18 +79,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Zyra Creative — Brands people stay loyal to" },
+      { title: "Zyra Creative — Reels, Websites & Brand Redesigns" },
       {
         name: "description",
         content:
-          "Zyra Creative (زيرا إبداع) is a premium creative & marketing studio crafting websites, brand redesigns, and coaching built around lasting customer loyalty.",
+          "Zyra Creative (زيرا إبداع) is a young creative studio producing professional Instagram reels, sleek modern websites, and bold brand redesigns.",
       },
       { name: "author", content: "Zyra Creative" },
-      { property: "og:title", content: "Zyra Creative — Brands people stay loyal to" },
+      { property: "og:title", content: "Zyra Creative — Reels, Websites & Brand Redesigns" },
       {
         property: "og:description",
         content:
-          "Premium creative & marketing studio: websites, brand redesigns, and brand coaching focused on customer loyalty.",
+          "A young creative studio producing professional Instagram reels, modern websites, and bold brand redesigns.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
