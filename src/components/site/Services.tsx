@@ -1,8 +1,8 @@
-import { Globe, Palette, Compass, HeartHandshake } from "lucide-react";
+import { Globe, Video, Palette, ArrowRight, Sparkles } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { Reveal } from "./Reveal";
 
-const icons = [Globe, Palette, Compass, HeartHandshake];
+const icons = [Globe, Video, Palette];
 
 export function Services() {
   const { t } = useI18n();
@@ -32,6 +32,24 @@ export function Services() {
               </Reveal>
             );
           })}
+
+          {/* "Interested in something else?" CTA card */}
+          <Reveal delay={t.services.items.length * 0.08}>
+            <a
+              href="#contact"
+              className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-transparent bg-gradient-accent p-8 text-white shadow-glow transition-all duration-300 hover:-translate-y-1.5"
+            >
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/15 text-white backdrop-blur-sm">
+                <Sparkles className="h-6 w-6" />
+              </div>
+              <h3 className="mt-6 font-display text-xl font-semibold">{t.services.more.title}</h3>
+              <p className="mt-3 text-sm text-white/85">{t.services.more.desc}</p>
+              <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold">
+                {t.services.more.cta}
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
+              </span>
+            </a>
+          </Reveal>
         </div>
       </div>
     </section>
