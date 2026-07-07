@@ -6,62 +6,66 @@ type Dict = typeof en;
 
 const en = {
   dir: "ltr",
-  nav: { services: "Services", work: "Approach", about: "About", contact: "Contact", cta: "Start a project" },
+  nav: { services: "Services", work: "Process", about: "About", contact: "Contact", cta: "Let's talk" },
   hero: {
-    badge: "Creative & Marketing Studio",
-    title1: "We build brands",
-    title2: "people stay loyal to",
-    desc: "Zyra Creative is a premium studio crafting websites, brand redesigns, and coaching — engineered around lasting customer loyalty.",
+    badge: "Young creative studio · Reels & Web",
+    title1: "Content that makes",
+    title2: "brands unforgettable",
+    desc: "Zyra Creative is a fresh creative studio producing scroll-stopping reels for Instagram, sleek modern websites, and bold brand redesigns. Small team, big ideas.",
     ctaPrimary: "Start a project",
-    ctaSecondary: "See our approach",
+    ctaSecondary: "See how we work",
     scroll: "Scroll",
   },
-  marquee: ["Web Design", "Brand Identity", "Redesigns", "Brand Coaching", "Marketing", "Customer Loyalty"],
+  marquee: ["Reels", "Web Design", "Marketing Videos", "Brand Redesigns", "Instagram", "Content Creation"],
   services: {
     tag: "What we do",
-    title: "Services crafted for growth",
-    desc: "A full-service creative partner — from the first pixel to lasting relationships with your customers.",
+    title: "Services built to stand out",
+    desc: "We provide many services including but not limited to web design, marketing videos, and brand redesigns.",
     items: [
-      { title: "Website Design & Build", desc: "Fast, responsive, conversion-focused websites that feel as premium as your brand." },
-      { title: "Brand Redesigns", desc: "Refresh or reinvent your identity with strategy-led design that stands out and lasts." },
-      { title: "Brand Coaching", desc: "Hands-on guidance to sharpen your voice, positioning, and creative direction." },
-      { title: "Loyalty & Marketing", desc: "Campaigns and experiences built to turn first-time buyers into lifelong fans." },
+      { title: "Web Design", desc: "Sleek, responsive websites that make your brand look premium from the very first scroll." },
+      { title: "Marketing Videos", desc: "Professional reels and short-form videos crafted to stop the scroll and grow your audience." },
+      { title: "Brand Redesigns", desc: "Fresh identities and visual makeovers that make your brand feel modern and memorable." },
     ],
+    more: {
+      title: "Interested in something else?",
+      desc: "We take on all kinds of creative work. Tell us what you have in mind — we'd love to help.",
+      cta: "Contact us",
+    },
   },
   stats: {
-    tag: "Proven experience",
-    title: "Results that compound",
+    tag: "Young & hungry",
+    title: "Fresh, fast, and all-in",
     items: [
-      { value: "10+", label: "Years of experience" },
-      { value: "120+", label: "Projects delivered" },
-      { value: "94%", label: "Client retention" },
-      { value: "40+", label: "Brands coached" },
+      { value: "New", label: "Fresh studio, fresh ideas" },
+      { value: "Weekly", label: "Reels we produce" },
+      { value: "24h", label: "Average reply time" },
+      { value: "100%", label: "Passion in every project" },
     ],
   },
   approach: {
-    tag: "Our approach",
-    title: "Loyalty by design",
-    desc: "We don't just launch — we build systems that keep your customers coming back.",
+    tag: "How we work",
+    title: "From idea to impact",
+    desc: "A simple, honest process focused on results you can actually see.",
     steps: [
-      { n: "01", title: "Discover", desc: "We learn your market, audience, and what truly drives loyalty." },
-      { n: "02", title: "Design", desc: "Strategy-led creative that expresses a clear, confident identity." },
-      { n: "03", title: "Build", desc: "Pixel-perfect, performant experiences ready to scale." },
-      { n: "04", title: "Grow", desc: "Ongoing coaching and marketing that deepen every relationship." },
+      { n: "01", title: "Discover", desc: "We learn your brand, goals, and what makes you different." },
+      { n: "02", title: "Create", desc: "We design and film content built to grab attention." },
+      { n: "03", title: "Refine", desc: "We polish every detail until it feels just right." },
+      { n: "04", title: "Grow", desc: "We help you build momentum on Instagram and beyond." },
     ],
   },
   about: {
     tag: "About Zyra",
-    title: "A studio obsessed with loyalty",
-    p1: "We're a small, senior team of designers, strategists, and marketers. For over a decade we've helped ambitious brands look sharper and grow deeper relationships with their customers.",
-    p2: "Every engagement is measured by one thing: do people come back? That focus on loyalty shapes how we design, build, and coach.",
-    point1: "Senior team, no hand-offs",
-    point2: "Strategy before pixels",
-    point3: "Built to retain, not just launch",
+    title: "A new studio with big ambitions",
+    p1: "Zyra Creative is a young creative studio. We may be new, but we're obsessed with quality — producing professional reels for Instagram, designing modern websites, and giving brands bold new looks.",
+    p2: "We pour everything into every project. What we lack in years, we more than make up for in energy, creativity, and care.",
+    point1: "Fresh, modern approach",
+    point2: "Reels made for Instagram",
+    point3: "Personal, hands-on service",
   },
   contact: {
     tag: "Let's talk",
-    title: "Ready to build something people love?",
-    desc: "Tell us about your brand. We'll reply within one business day.",
+    title: "Have a project in mind?",
+    desc: "Tell us about your brand — we'll get back to you fast.",
     name: "Your name",
     email: "Email address",
     message: "Tell us about your project",
@@ -69,72 +73,79 @@ const en = {
     sent: "Thanks — we'll be in touch soon!",
   },
   footer: {
-    tagline: "Premium creative & marketing studio building brands people stay loyal to.",
+    tagline: "A young creative studio producing reels, websites, and bold brand redesigns.",
     nav: "Navigate",
     social: "Connect",
     rights: "All rights reserved.",
     made: "Crafted with intent.",
+    theme: "Theme",
+    light: "Light",
+    dark: "Dark",
   },
 };
 
 const ar: Dict = {
   dir: "rtl",
-  nav: { services: "خدماتنا", work: "منهجنا", about: "من نحن", contact: "تواصل", cta: "ابدأ مشروعك" },
+  nav: { services: "خدماتنا", work: "طريقتنا", about: "من نحن", contact: "تواصل", cta: "لنتحدث" },
   hero: {
-    badge: "استوديو إبداعي وتسويقي",
-    title1: "نصنع علامات تجارية",
-    title2: "يبقى العملاء أوفياء لها",
-    desc: "زيرا إبداع استوديو متميّز يصمّم المواقع، ويعيد تصميم العلامات، ويقدّم التدريب — مبنيّ على ولاء العملاء الدائم.",
+    badge: "استوديو إبداعي ناشئ · ريلز ومواقع",
+    title1: "محتوى يجعل العلامات",
+    title2: "لا تُنسى",
+    desc: "زيرا إبداع استوديو إبداعي ناشئ ينتج ريلز مبهرة لإنستغرام، ومواقع عصرية أنيقة، وإعادة تصميم جريئة للعلامات. فريق صغير بأفكار كبيرة.",
     ctaPrimary: "ابدأ مشروعك",
-    ctaSecondary: "اكتشف منهجنا",
+    ctaSecondary: "شاهد طريقتنا",
     scroll: "مرّر",
   },
-  marquee: ["تصميم المواقع", "هوية العلامة", "إعادة التصميم", "تدريب العلامات", "التسويق", "ولاء العملاء"],
+  marquee: ["ريلز", "تصميم المواقع", "فيديوهات تسويقية", "إعادة تصميم العلامات", "إنستغرام", "صناعة المحتوى"],
   services: {
     tag: "ما نقدمه",
-    title: "خدمات مصمّمة للنمو",
-    desc: "شريك إبداعي متكامل — من أول بكسل إلى علاقات دائمة مع عملائك.",
+    title: "خدمات تصنع التميّز",
+    desc: "نقدّم خدمات كثيرة تشمل على سبيل المثال لا الحصر تصميم المواقع، والفيديوهات التسويقية، وإعادة تصميم العلامات.",
     items: [
-      { title: "تصميم وبناء المواقع", desc: "مواقع سريعة ومتجاوبة تركّز على التحويل وتعكس فخامة علامتك." },
-      { title: "إعادة تصميم العلامة", desc: "جدّد أو أعد ابتكار هويتك بتصميم قائم على الاستراتيجية يبقى ويتميّز." },
-      { title: "تدريب العلامات", desc: "إرشاد عملي لصقل صوتك وموقعك واتجاهك الإبداعي." },
-      { title: "الولاء والتسويق", desc: "حملات وتجارب تحوّل المشتري لأول مرة إلى عميل وفيّ مدى الحياة." },
+      { title: "تصميم المواقع", desc: "مواقع أنيقة ومتجاوبة تُظهر علامتك بمظهر فاخر من أول لحظة." },
+      { title: "فيديوهات تسويقية", desc: "ريلز وفيديوهات قصيرة احترافية مصمّمة لإيقاف التمرير وزيادة جمهورك." },
+      { title: "إعادة تصميم العلامات", desc: "هويات جديدة ولمسات بصرية تجعل علامتك عصرية ولا تُنسى." },
     ],
+    more: {
+      title: "تبحث عن شيء آخر؟",
+      desc: "نتولّى كل أنواع الأعمال الإبداعية. أخبرنا بما يدور في بالك — يسعدنا مساعدتك.",
+      cta: "تواصل معنا",
+    },
   },
   stats: {
-    tag: "خبرة مثبتة",
-    title: "نتائج تتراكم",
+    tag: "شباب وطموح",
+    title: "سريعون وشغوفون بكل ما نقدّم",
     items: [
-      { value: "+10", label: "سنوات خبرة" },
-      { value: "+120", label: "مشروع منجز" },
-      { value: "٪94", label: "نسبة الاحتفاظ" },
-      { value: "+40", label: "علامة مدرَّبة" },
+      { value: "جديد", label: "استوديو جديد بأفكار جديدة" },
+      { value: "أسبوعيًا", label: "ريلز ننتجها" },
+      { value: "٢٤ س", label: "متوسط وقت الرد" },
+      { value: "٪100", label: "شغف في كل مشروع" },
     ],
   },
   approach: {
-    tag: "منهجنا",
-    title: "الولاء بالتصميم",
-    desc: "لا نكتفي بالإطلاق — بل نبني أنظمة تُعيد عملاءك مرارًا.",
+    tag: "طريقتنا",
+    title: "من الفكرة إلى الأثر",
+    desc: "عملية بسيطة وصادقة تركّز على نتائج تراها بنفسك.",
     steps: [
-      { n: "٠١", title: "الاكتشاف", desc: "ندرس سوقك وجمهورك وما يصنع الولاء حقًا." },
-      { n: "٠٢", title: "التصميم", desc: "إبداع قائم على الاستراتيجية يعبّر عن هوية واثقة وواضحة." },
-      { n: "٠٣", title: "البناء", desc: "تجارب دقيقة وعالية الأداء جاهزة للتوسّع." },
-      { n: "٠٤", title: "النمو", desc: "تدريب وتسويق مستمر يعمّق كل علاقة." },
+      { n: "٠١", title: "الاكتشاف", desc: "ندرس علامتك وأهدافك وما يميّزك." },
+      { n: "٠٢", title: "الإبداع", desc: "نصمّم ونصوّر محتوى يجذب الانتباه." },
+      { n: "٠٣", title: "الصقل", desc: "نحسّن كل تفصيلة حتى تصبح مثالية." },
+      { n: "٠٤", title: "النمو", desc: "نساعدك على بناء زخم على إنستغرام وأبعد." },
     ],
   },
   about: {
     tag: "عن زيرا",
-    title: "استوديو مهووس بالولاء",
-    p1: "نحن فريق صغير من كبار المصممين والاستراتيجيين والمسوّقين. لأكثر من عقد ساعدنا علامات طموحة على أن تبدو أكثر تميّزًا وتبني علاقات أعمق مع عملائها.",
-    p2: "نقيس كل عمل بمعيار واحد: هل يعود الناس؟ هذا التركيز على الولاء يشكّل طريقة تصميمنا وبنائنا وتدريبنا.",
-    point1: "فريق خبير بلا وسطاء",
-    point2: "الاستراتيجية قبل التصميم",
-    point3: "مبنيّ للاحتفاظ لا للإطلاق فقط",
+    title: "استوديو جديد بطموح كبير",
+    p1: "زيرا إبداع استوديو إبداعي ناشئ. قد نكون جددًا، لكننا مهووسون بالجودة — ننتج ريلز احترافية لإنستغرام، ونصمّم مواقع عصرية، ونمنح العلامات مظهرًا جريئًا جديدًا.",
+    p2: "نضع كل طاقتنا في كل مشروع. ما ينقصنا من سنوات نعوّضه بالحماس والإبداع والاهتمام.",
+    point1: "أسلوب عصري ومتجدّد",
+    point2: "ريلز مصمّمة لإنستغرام",
+    point3: "خدمة شخصية وقريبة",
   },
   contact: {
     tag: "لنتحدث",
-    title: "جاهز لبناء شيء يحبه الناس؟",
-    desc: "أخبرنا عن علامتك. سنردّ خلال يوم عمل واحد.",
+    title: "لديك مشروع في بالك؟",
+    desc: "أخبرنا عن علامتك — سنردّ عليك بسرعة.",
     name: "اسمك",
     email: "البريد الإلكتروني",
     message: "أخبرنا عن مشروعك",
@@ -142,11 +153,14 @@ const ar: Dict = {
     sent: "شكرًا — سنتواصل معك قريبًا!",
   },
   footer: {
-    tagline: "استوديو إبداعي وتسويقي متميّز يبني علامات يبقى الناس أوفياء لها.",
+    tagline: "استوديو إبداعي ناشئ ينتج ريلز ومواقع وإعادة تصميم جريئة للعلامات.",
     nav: "تصفّح",
     social: "تواصل",
     rights: "جميع الحقوق محفوظة.",
     made: "صُنع بعناية.",
+    theme: "المظهر",
+    light: "فاتح",
+    dark: "داكن",
   },
 };
 
@@ -156,7 +170,8 @@ type Ctx = { lang: Lang; setLang: (l: Lang) => void; t: Dict };
 const I18nContext = createContext<Ctx | null>(null);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLangState] = useState<Lang>("en");
+  const [fading, setFading] = useState(false);
 
   useEffect(() => {
     const dir = lang === "ar" ? "rtl" : "ltr";
@@ -164,9 +179,27 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     document.documentElement.setAttribute("lang", lang);
   }, [lang]);
 
+  const setLang = (l: Lang) => {
+    if (l === lang) return;
+    // Smooth cross-fade between languages
+    setFading(true);
+    window.setTimeout(() => {
+      setLangState(l);
+      setFading(false);
+    }, 240);
+  };
+
   return (
     <I18nContext.Provider value={{ lang, setLang, t: dictionaries[lang] }}>
-      {children}
+      <div
+        style={{
+          transition: "opacity 0.4s ease, filter 0.4s ease",
+          opacity: fading ? 0 : 1,
+          filter: fading ? "blur(6px)" : "none",
+        }}
+      >
+        {children}
+      </div>
     </I18nContext.Provider>
   );
 }
