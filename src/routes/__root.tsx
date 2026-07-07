@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { I18nProvider } from "../lib/i18n";
+import { ThemeProvider } from "../lib/theme";
 
 function NotFoundComponent() {
   return (
@@ -78,18 +79,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Zyra Creative — Brands people stay loyal to" },
+      { title: "Zyra Creative — Reels, Websites & Brand Redesigns" },
       {
         name: "description",
         content:
-          "Zyra Creative (زيرا إبداع) is a premium creative & marketing studio crafting websites, brand redesigns, and coaching built around lasting customer loyalty.",
+          "Zyra Creative (زيرا إبداع) is a young creative studio producing professional Instagram reels, sleek modern websites, and bold brand redesigns.",
       },
       { name: "author", content: "Zyra Creative" },
-      { property: "og:title", content: "Zyra Creative — Brands people stay loyal to" },
+      { property: "og:title", content: "Zyra Creative — Reels, Websites & Brand Redesigns" },
       {
         property: "og:description",
         content:
-          "Premium creative & marketing studio: websites, brand redesigns, and brand coaching focused on customer loyalty.",
+          "A young creative studio producing professional Instagram reels, modern websites, and bold brand redesigns.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -104,7 +105,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700;800&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700;800&family=Unbounded:wght@500;600;700;800&display=swap",
       },
     ],
   }),
@@ -133,10 +134,12 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <I18nProvider>
-        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-        <Outlet />
-      </I18nProvider>
+      <ThemeProvider>
+        <I18nProvider>
+          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+          <Outlet />
+        </I18nProvider>
+      </ThemeProvider>
     </QueryClientProvider>
   );
 }

@@ -40,7 +40,7 @@ export function Preloader() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.35 }}
-            className="mt-6 font-display text-2xl font-bold tracking-tight"
+            className="mt-6 font-brand text-2xl font-bold tracking-tight"
           >
             <span className="text-gradient">{lang === "en" ? "Zyra Creative" : "زيرا إبداع"}</span>
           </motion.div>

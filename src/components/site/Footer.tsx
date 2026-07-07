@@ -1,5 +1,40 @@
+import { Moon, Sun } from "lucide-react";
+import { motion } from "motion/react";
 import mark from "@/assets/zyra-mark.png";
 import { useI18n } from "@/lib/i18n";
+import { useTheme } from "@/lib/theme";
+import { cn } from "@/lib/utils";
+
+function ThemeToggle() {
+  const { theme, setTheme } = useTheme();
+  const { t } = useI18n();
+  return (
+    <div className="relative inline-flex items-center rounded-full border border-border bg-secondary/60 p-0.5 text-xs font-medium">
+      <motion.span
+        layout
+        transition={{ type: "spring", stiffness: 500, damping: 34 }}
+        className="absolute inset-y-0.5 w-[calc(50%-0.125rem)] rounded-full bg-gradient-accent"
+        style={{ [theme === "dark" ? "insetInlineStart" : "insetInlineEnd"]: "0.125rem" } as React.CSSProperties}
+      />
+      <button
+        onClick={() => setTheme("dark")}
+        aria-label={t.footer.dark}
+        className={cn("relative z-10 flex items-center gap-1.5 rounded-full px-3 py-1.5 transition-colors", theme === "dark" ? "text-white" : "text-muted-foreground")}
+      >
+        <Moon className="h-3.5 w-3.5" />
+        {t.footer.dark}
+      </button>
+      <button
+        onClick={() => setTheme("light")}
+        aria-label={t.footer.light}
+        className={cn("relative z-10 flex items-center gap-1.5 rounded-full px-3 py-1.5 transition-colors", theme === "light" ? "text-white" : "text-muted-foreground")}
+      >
+        <Sun className="h-3.5 w-3.5" />
+        {t.footer.light}
+      </button>
+    </div>
+  );
+}
 
 export function Footer() {
   const { t, lang } = useI18n();
@@ -18,12 +53,18 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2.5">
               <img src={mark} alt="Zyra Creative" width={34} height={34} loading="lazy" className="h-8 w-8" />
-              <span className="font-display text-lg font-bold tracking-tight">
-                {lang === "en" ? "Zyra" : "زيرا"}
-                <span className="text-gradient"> {lang === "en" ? "Creative" : "إبداع"}</span>
+              <span className="font-brand text-lg font-bold tracking-tight text-gradient">
+                {lang === "en" ? "Zyra Creative" : "زيرا إبداع"}
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">{t.footer.tagline}</p>
+
+            <div className="mt-6">
+              <h4 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">{t.footer.theme}</h4>
+              <div className="mt-3">
+                <ThemeToggle />
+              </div>
+            </div>
           </div>
 
           <div>
