@@ -1,11 +1,46 @@
 import { useState } from "react";
-import { Send, Check } from "lucide-react";
+import { Send, Check, Loader2 } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { Reveal } from "./Reveal";
 
 export function Contact() {
   const { t } = useI18n();
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (sending) return;
+    setError(null);
+    setSending(true);
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const payload = {
+      name: String(data.get("name") ?? ""),
+      email: String(data.get("email") ?? ""),
+      message: String(data.get("message") ?? ""),
+    };
+
+    try {
+      const res = await fetch("/api/public/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) {
+        const body = (await res.json().catch(() => null)) as { error?: string } | null;
+        throw new Error(body?.error ?? "Something went wrong. Please try again.");
+      }
+      setSent(true);
+      form.reset();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    } finally {
+      setSending(false);
+    }
+  }
 
   return (
     <section id="contact" className="px-4 py-24 sm:py-32">
@@ -28,37 +63,50 @@ export function Contact() {
               </div>
             ) : (
               <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSent(true);
-                }}
+                onSubmit={handleSubmit}
                 className="relative mx-auto mt-10 max-w-xl space-y-4"
               >
                 <div className="grid gap-4 sm:grid-cols-2">
                   <input
                     required
+                    name="name"
+                    maxLength={100}
                     placeholder={t.contact.name}
                     className="rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-transparent focus:ring-2 focus:ring-ring"
                   />
                   <input
                     required
+                    name="email"
                     type="email"
+                    maxLength={255}
                     placeholder={t.contact.email}
                     className="rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-transparent focus:ring-2 focus:ring-ring"
                   />
                 </div>
                 <textarea
                   required
+                  name="message"
                   rows={4}
+                  maxLength={2000}
                   placeholder={t.contact.message}
                   className="w-full resize-none rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-transparent focus:ring-2 focus:ring-ring"
                 />
+                {error && (
+                  <p className="text-sm text-destructive" role="alert">
+                    {error}
+                  </p>
+                )}
                 <button
                   type="submit"
-                  className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-accent px-6 py-3.5 text-sm font-semibold text-white shadow-glow transition-transform hover:scale-[1.02]"
+                  disabled={sending}
+                  className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-accent px-6 py-3.5 text-sm font-semibold text-white shadow-glow transition-transform hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-70"
                 >
-                  {t.contact.send}
-                  <Send className="h-4 w-4 transition-transform group-hover:translate-x-0.5 rtl:-scale-x-100" />
+                  {sending ? t.contact.sending : t.contact.send}
+                  {sending ? (
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                  ) : (
+                    <Send className="h-4 w-4 transition-transform group-hover:translate-x-0.5 rtl:-scale-x-100" />
+                  )}
                 </button>
               </form>
             )}
