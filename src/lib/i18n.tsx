@@ -8,10 +8,10 @@ const en = {
   dir: "ltr",
   nav: { services: "Services", work: "Process", about: "About", contact: "Contact", cta: "Let's talk" },
   hero: {
-    badge: "Young creative studio · Reels & Web",
-    title1: "Content that makes",
-    title2: "brands unforgettable",
-    desc: "Zyra Creative is a fresh creative studio producing scroll-stopping reels for Instagram, sleek modern websites, and bold brand redesigns. Small team, big ideas.",
+    badge: "Creative & Marketing Studio",
+    title1: "Built with purpose.",
+    title2: "Designed for impact.",
+    desc: "Elevating brands through refined design, strategic clarity, and immersive digital experiences that inspire growth and drive lasting impact.",
     ctaPrimary: "Start a project",
     ctaSecondary: "See how we work",
     scroll: "Scroll",
@@ -50,7 +50,7 @@ const en = {
       { n: "01", title: "Discover", desc: "We learn your brand, goals, and what makes you different." },
       { n: "02", title: "Create", desc: "We design and film content built to grab attention." },
       { n: "03", title: "Refine", desc: "We polish every detail until it feels just right." },
-      { n: "04", title: "Grow", desc: "We help you build momentum on Instagram and beyond." },
+      { n: "04", title: "Grow", desc: "We help you build momentum and grow." },
     ],
   },
   about: {
@@ -59,7 +59,7 @@ const en = {
     p1: "Zyra Creative is a young creative studio. We may be new, but we're obsessed with quality — producing professional reels for Instagram, designing modern websites, and giving brands bold new looks.",
     p2: "We pour everything into every project. What we lack in years, we more than make up for in energy, creativity, and care.",
     point1: "Fresh, modern approach",
-    point2: "Reels made for Instagram",
+    point2: "Creative, unique ideas",
     point3: "Personal, hands-on service",
   },
   contact: {
@@ -73,7 +73,7 @@ const en = {
     sent: "Thanks — we'll be in touch soon!",
   },
   footer: {
-    tagline: "A young creative studio producing reels, websites, and bold brand redesigns.",
+    tagline: "A young creative studio shaping bold ideas into meaningful, lasting experiences.",
     nav: "Navigate",
     social: "Connect",
     rights: "All rights reserved.",
