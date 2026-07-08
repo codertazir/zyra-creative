@@ -70,6 +70,7 @@ const en = {
     email: "Email address",
     message: "Tell us about your project",
     send: "Send message",
+    sending: "Sending...",
     sent: "Thanks — we'll be in touch soon!",
   },
   footer: {
@@ -150,6 +151,7 @@ const ar: Dict = {
     email: "البريد الإلكتروني",
     message: "أخبرنا عن مشروعك",
     send: "أرسل الرسالة",
+    sending: "جارٍ الإرسال...",
     sent: "شكرًا — سنتواصل معك قريبًا!",
   },
   footer: {
