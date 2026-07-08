@@ -8,10 +8,10 @@ const en = {
   dir: "ltr",
   nav: { services: "Services", work: "Process", about: "About", contact: "Contact", cta: "Let's talk" },
   hero: {
-    badge: "Young creative studio · Reels & Web",
-    title1: "Content that makes",
-    title2: "brands unforgettable",
-    desc: "Zyra Creative is a fresh creative studio producing scroll-stopping reels for Instagram, sleek modern websites, and bold brand redesigns. Small team, big ideas.",
+    badge: "Creative & Marketing Studio",
+    title1: "Built with purpose.",
+    title2: "Designed for impact.",
+    desc: "Elevating brands through refined design, strategic clarity, and immersive digital experiences that inspire growth and drive lasting impact.",
     ctaPrimary: "Start a project",
     ctaSecondary: "See how we work",
     scroll: "Scroll",
@@ -50,7 +50,7 @@ const en = {
       { n: "01", title: "Discover", desc: "We learn your brand, goals, and what makes you different." },
       { n: "02", title: "Create", desc: "We design and film content built to grab attention." },
       { n: "03", title: "Refine", desc: "We polish every detail until it feels just right." },
-      { n: "04", title: "Grow", desc: "We help you build momentum on Instagram and beyond." },
+      { n: "04", title: "Grow", desc: "We help you build momentum and grow." },
     ],
   },
   about: {
@@ -59,7 +59,7 @@ const en = {
     p1: "Zyra Creative is a young creative studio. We may be new, but we're obsessed with quality — producing professional reels for Instagram, designing modern websites, and giving brands bold new looks.",
     p2: "We pour everything into every project. What we lack in years, we more than make up for in energy, creativity, and care.",
     point1: "Fresh, modern approach",
-    point2: "Reels made for Instagram",
+    point2: "Creative, unique ideas",
     point3: "Personal, hands-on service",
   },
   contact: {
@@ -73,7 +73,7 @@ const en = {
     sent: "Thanks — we'll be in touch soon!",
   },
   footer: {
-    tagline: "A young creative studio producing reels, websites, and bold brand redesigns.",
+    tagline: "A young creative studio shaping bold ideas into meaningful, lasting experiences.",
     nav: "Navigate",
     social: "Connect",
     rights: "All rights reserved.",
@@ -88,10 +88,10 @@ const ar: Dict = {
   dir: "rtl",
   nav: { services: "خدماتنا", work: "طريقتنا", about: "من نحن", contact: "تواصل", cta: "لنتحدث" },
   hero: {
-    badge: "استوديو إبداعي ناشئ · ريلز ومواقع",
-    title1: "محتوى يجعل العلامات",
-    title2: "لا تُنسى",
-    desc: "زيرا إبداع استوديو إبداعي ناشئ ينتج ريلز مبهرة لإنستغرام، ومواقع عصرية أنيقة، وإعادة تصميم جريئة للعلامات. فريق صغير بأفكار كبيرة.",
+    badge: "استوديو إبداعي وتسويقي",
+    title1: "مبنيّ بهدف.",
+    title2: "مصمّم للتأثير.",
+    desc: "نرفع مستوى العلامات عبر تصميم راقٍ، ورؤية استراتيجية، وتجارب رقمية غامرة تلهم النمو وتخلق تأثيرًا دائمًا.",
     ctaPrimary: "ابدأ مشروعك",
     ctaSecondary: "شاهد طريقتنا",
     scroll: "مرّر",
@@ -130,7 +130,7 @@ const ar: Dict = {
       { n: "٠١", title: "الاكتشاف", desc: "ندرس علامتك وأهدافك وما يميّزك." },
       { n: "٠٢", title: "الإبداع", desc: "نصمّم ونصوّر محتوى يجذب الانتباه." },
       { n: "٠٣", title: "الصقل", desc: "نحسّن كل تفصيلة حتى تصبح مثالية." },
-      { n: "٠٤", title: "النمو", desc: "نساعدك على بناء زخم على إنستغرام وأبعد." },
+      { n: "٠٤", title: "النمو", desc: "نساعدك على بناء الزخم والنمو." },
     ],
   },
   about: {
@@ -139,7 +139,7 @@ const ar: Dict = {
     p1: "زيرا إبداع استوديو إبداعي ناشئ. قد نكون جددًا، لكننا مهووسون بالجودة — ننتج ريلز احترافية لإنستغرام، ونصمّم مواقع عصرية، ونمنح العلامات مظهرًا جريئًا جديدًا.",
     p2: "نضع كل طاقتنا في كل مشروع. ما ينقصنا من سنوات نعوّضه بالحماس والإبداع والاهتمام.",
     point1: "أسلوب عصري ومتجدّد",
-    point2: "ريلز مصمّمة لإنستغرام",
+    point2: "أفكار إبداعية وفريدة",
     point3: "خدمة شخصية وقريبة",
   },
   contact: {
@@ -153,7 +153,7 @@ const ar: Dict = {
     sent: "شكرًا — سنتواصل معك قريبًا!",
   },
   footer: {
-    tagline: "استوديو إبداعي ناشئ ينتج ريلز ومواقع وإعادة تصميم جريئة للعلامات.",
+    tagline: "استوديو إبداعي ناشئ يحوّل الأفكار الجريئة إلى تجارب ذات معنى واستمرارية.",
     nav: "تصفّح",
     social: "تواصل",
     rights: "جميع الحقوق محفوظة.",
