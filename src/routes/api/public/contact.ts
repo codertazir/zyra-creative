@@ -41,20 +41,18 @@ export const Route = createFileRoute("/api/public/contact")({
         const { name, email, message } = parsed.data;
 
         try {
-          const { WorkerMailer } = await import("worker-mailer");
-          const mailer = await WorkerMailer.connect({
+          const nodemailer = await import("nodemailer");
+          const transporter = nodemailer.createTransport({
             host: "smtp.gmail.com",
-            port: 587,
-            secure: false,
-            startTls: true,
-            authType: "plain",
-            credentials: { username: from, password },
+            port: 465,
+            secure: true,
+            auth: { user: from, pass: password },
           });
 
-          await mailer.send({
-            from: { name: "Zyra Creative", email: from },
-            to: { email: to },
-            reply: { name, email },
+          await transporter.sendMail({
+            from: `"Zyra Creative" <${from}>`,
+            to,
+            replyTo: `"${name}" <${email}>`,
             subject: `New enquiry from ${name}`,
             text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
             html: `
@@ -67,8 +65,6 @@ export const Route = createFileRoute("/api/public/contact")({
               </div>
             `,
           });
-
-          await mailer.close();
 
           return Response.json({ ok: true });
         } catch (error) {
