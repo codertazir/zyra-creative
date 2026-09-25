@@ -26,6 +26,7 @@ function Index() {
         <Services />
         <Stats />
         <Approach />
+        <Portfolio />
         <About />
         <Contact />
       </main>
