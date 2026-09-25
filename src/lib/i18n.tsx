@@ -6,7 +6,7 @@ type Dict = typeof en;
 
 const en = {
   dir: "ltr",
-  nav: { services: "Services", work: "Process", about: "About", contact: "Contact", cta: "Let's talk" },
+  nav: { services: "Services", work: "Process", portfolio: "Portfolio", about: "About", contact: "Contact", cta: "Let's talk" },
   hero: {
     badge: "Creative & Marketing Studio",
     title1: "Built with purpose.",
@@ -98,7 +98,7 @@ const en = {
 
 const ar: Dict = {
   dir: "rtl",
-  nav: { services: "خدماتنا", work: "طريقتنا", about: "من نحن", contact: "تواصل", cta: "لنتحدث" },
+  nav: { services: "خدماتنا", work: "طريقتنا", portfolio: "أعمالنا", about: "من نحن", contact: "تواصل", cta: "لنتحدث" },
   hero: {
     badge: "استوديو إبداعي وتسويقي",
     title1: "مبنيّ بهدف.",
