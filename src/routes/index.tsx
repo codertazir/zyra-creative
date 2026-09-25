@@ -6,6 +6,7 @@ import { Marquee } from "@/components/site/Marquee";
 import { Services } from "@/components/site/Services";
 import { Stats } from "@/components/site/Stats";
 import { Approach } from "@/components/site/Approach";
+import { Portfolio } from "@/components/site/Portfolio";
 import { About } from "@/components/site/About";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
