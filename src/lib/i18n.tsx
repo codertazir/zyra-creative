@@ -53,6 +53,17 @@ const en = {
       { n: "04", title: "Grow", desc: "We help you build momentum and grow." },
     ],
   },
+  portfolio: {
+    tag: "Our work",
+    title: "Projects & prototypes",
+    desc: "A glimpse of the websites and prototypes we've designed and built for real brands.",
+    view: "View project",
+    more: {
+      title: "And there's more",
+      desc: "Your project could be the next one here. Let's build something great together.",
+      cta: "Start a project",
+    },
+  },
   about: {
     tag: "About Zyra",
     title: "A new studio with big ambitions",
@@ -133,6 +144,17 @@ const ar: Dict = {
       { n: "٠٣", title: "الصقل", desc: "نحسّن كل تفصيلة حتى تصبح مثالية." },
       { n: "٠٤", title: "النمو", desc: "نساعدك على بناء الزخم والنمو." },
     ],
+  },
+  portfolio: {
+    tag: "أعمالنا",
+    title: "مشاريع ونماذج أولية",
+    desc: "لمحة عن المواقع والنماذج التي صممناها وطورناها لعلامات حقيقية.",
+    view: "زيارة المشروع",
+    more: {
+      title: "والقادم أكثر",
+      desc: "قد يكون مشروعك هو التالي هنا. لنبني شيئًا رائعًا معًا.",
+      cta: "ابدأ مشروعك",
+    },
   },
   about: {
     tag: "عن زيرا",
